@@ -6,7 +6,9 @@ import os
 
 
 app = Flask(__name__)
-app.config["SQLALCHEMY_DATABASE_URI"] = os.getenv("DATABASE_URI")
+# banco de dados sqlite
+app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///fakepinterest.db"
+# app.config["SQLALCHEMY_DATABASE_URI"] = os.getenv("DATABASE_URI")
 app.config["SECRET_KEY"] = "super secret key"
 app.config["UPLOAD_FOLDER"] = "fakepinterest/static/fotos_posts"
 
