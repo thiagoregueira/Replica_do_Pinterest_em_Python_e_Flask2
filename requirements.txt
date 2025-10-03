@@ -10,7 +10,7 @@ Flask-Login
 Flask-SQLAlchemy
 Flask-WTF
 greenlet
-gunicorn
+gunicorn>=23.0.0
 idna
 itsdangerous
 Jinja2
